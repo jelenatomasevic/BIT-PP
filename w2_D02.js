@@ -228,7 +228,60 @@ switch (operation) {
 }
 console.log(res);
 
+//Arrays
+//1.
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 
+console.log('\n');
+//2.
+var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+console.log(days[3]);
+
+console.log('\n');
+var array = [2, -4, 5, -2, -11];
+
+for (var i = 0; i < array.length; i++)
+    if (array[i] < 0)
+        console.log(array[i]);
+
+
+console.log('\n');
+//4.         
+var array2 = [5, 15, -5, 20, 12, 18, 72, 14, 9];
+
+for (var i = 0; i < array2.length; i++)
+    if (array2[i] % 3 === 0)
+        console.log(array2[i]);
+
+
+
+console.log('\n');
+//5.
+var array3 = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+
+console.log(array3.length);
+console.log(array3[4]);
+console.log(array3[3]);
+console.log(array3[2][3]);
+
+//console.log(array3[4]);
+
+
+var x = "008 " + [4, 2];
+var y = [1, 2, 3] + [2, 2, 2];
+console.log([1, 2, 3] + [2, 2, 2]);
+console.log(y);
+
+
+//Random Zadatak
+
+var niz = [1, 2, 3];
+niz[1] = "drvo";
+console.log(niz);
+delete niz[2];
+console.log(niz);
+niz[4] = [1, 2, 3];
+console.log(niz[4][2]);
 
 
